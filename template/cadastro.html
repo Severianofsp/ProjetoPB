@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Point na Brasa</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/cadastro.css"/>
+  </head>
+  <script language="javascript" src="../static/js/funcoes.js"></script>
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Pedidos Online</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Cadastro.html">Cadastrar</a></li>
+        <li><a href="#">    (21) 99999-9999</a></li>
+      </ul>
+    </nav>
+
+<div class="Cadastro">
+    <div class="img-logo">
+        <a href="index.html"><img src="../static/image/logo.png" alt="Logo"/></a>
+        </div>
+<div class="opcoes">
+    <ul>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastrar-se</a></li>
+    </ul>
+</div>
+<form method="POST" action="malto:sinistro.oliveira@gmail.com">
+
+<!-- Início da Área de Dados-->
+
+<div class="dados" style="background-color: white;">
+<h1>DADOS PESSOAIS</h1>
+
+
+  <label>
+      <p>
+    <span>EMAIL</span>
+  </p>
+  <p>
+    <input type="email" class="input_text" name="email" id="email" placeholder="digite o email"/>
+  </p>
+  </label>
+  
+  <label>
+      <p>
+    <span>NOME</span>
+  </p>
+<p>
+  <input type="text" class="input_text" name="nome" id="nome" placeholder="digite o nome"/>
+</p>
+</label>
+
+<label>
+  
+<p>
+  <span>SOBRENOME</span>
+</p>
+<p>
+  <input type="text" class="input_text" name="sobrenome" id="sobrenome" placeholder="digite o sobrenome"/>
+</p>
+</label>
+<label>
+<p>
+  <span>TELEFONE</span>
+</p>
+<p>
+  <input type="text" class="input_text" name="telefone" id="telefone" placeholder="(xx) XXXXX-XXXX"/>
+</p>
+</label>
+<label>
+<p>
+  <span>DATA DE NASCIMENTO (OPCIONAL)</span>
+</p>
+<p>
+ <input type="date" class="input_text" name="data" id="data" placeholder="__/__/____">
+</p>
+</div>
+
+<!-- Início de Endereço-->
+
+<div class="endereco" style="background-color: white;">
+<h1>ENDEREÇO DE ENTREGA</h1>
+<label>
+<p><input type="radio" value="casa">casa
+<input type="radio" value="trabalho">trabalho
+<input type="radio" value="outro">outros
+</p>
+</label>
+
+<label>
+<p>
+  <span>APELIDO (OPCIONAL)</span>
+</p>
+<p>
+  <input type="text" class="input_text" name="apelido" id="apelido" placeholder="Ex. Minha casa">
+</p>
+</label>
+<label>
+<p>
+  <span>CEP</span>
+</p>
+<p>
+</p>
+<p>
+<input type="text" class="input_text" name="cep" id="cep" placeholder="digite o CEP"/>
+</p>
+<button type="submit" class="buscar buscar-efeito">Buscar CEP</button>
+</label>
+<label for="uf">
+<p>
+  <span>ESTADO</span>
+</p>
+<p>
+  <input type="hidden" name="estado" class="uf"/>
+  <select id="uf">
+      <option value="sel" checked>selecione</option>
+			<option value="AC">Acre</option>
+			<option value="AL">Alagoas</option>
+			<option value="AP">Amapá</option>
+			<option value="AM">Amazonas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="DF">Distrito Federal</option>
+			<option value="ES">Espírito Santo</option>
+			<option value="GO">Goiás</option>
+			<option value="MA">Maranhão</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="PA">Pará</option>
+			<option value="PB">Paraíba</option>
+			<option value="PR">Paraná</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="SC">Santa Catarina</option>
+			<option value="SP">São Paulo</option>
+			<option value="SE">Sergipe</option>
+			<option value="TO">Tocantins</option>
+		</select>
+</p>
+</label>
+<label>
+<p>
+  <span>CIDADE</span>
+</p>
+<p>
+    <input type="text" name="cidade" id="cidade" class="input_text">
+  </p>
+</label>
+<label>
+<p>
+  <span>BAIRRO</span>
+</p>
+<p>
+    <input type="text" name="BAIRRO" id="lbairro" class="input_text">
+  </p>
+</label>
+<label>
+<p>
+  <span>ENDEREÇO</span>
+</p>
+<input type="text" class="input_text" id="endereco" name="endereco" placeholder="digite o endereço">
+</p>
+</label>
+<label>
+<p>
+  <span>NÚMERO</span>
+</p>
+<p>
+  <input type="text" class="input_text" id="numero" name="numero" placeholder="digite o número">
+</p>
+</label>
+<label>
+<p>
+  <span>COMPLEMENTO (OPCIONAL)</span>
+</p>
+<p>
+  <input type="text" class="input_text" id="complemento" name="complemento" placeholder="digite o complemento">
+</p>
+</label>
+</div>
+
+<!-- Incio da Área de Informações da Conta-->
+
+<div class="senha" style="background-color: white;">
+<h1>INFORMAÇÕES DA CONTA</h1>
+<label>
+<p>
+  <span>SENHA</span>
+</p>
+<p>
+  <input type="password" class="input_text" id="psw" name="psw" placeholder="escolha uma senha">
+</p>
+</label>
+
+<label>
+    <p>
+      <span>REPITA A SENHA</span>
+    </p>
+    <p>
+      <input type="password" class="input_text" id="psw" name="psw" placeholder="confirme e repita a senha">
+    </p>
+    </label>
+    
+<p>
+<input type="checkbox" name="check">
+<label class="lcheck">Concordo com os <a href="#">termos de uso e politica de privacidade</a></label>
+</p>
+<button type="submit" class="submit">Cadastrar</button>
+</div>
+</form>
+</div>
+
+<!--Rodapé-->
+    <div class="setor3">
+        <footer class="pe">
+            <img src="../static/image/facebook.png" style="width: 30px; height: 30px;"/>
+            <p>Site Orgulhosamente criado </br>por Igor Petista</p>
+        </div>
+        </div>
+        </footer>
+        <script type="text/javascript">
+          $("#cep").focusout(function(){
+            //Início do Comando AJAX
+            $.ajax({
+              //O campo URL diz o caminho de onde virá os dados
+              //É importante concatenar o valor digitado no CEP
+              url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+              //Aqui você deve preencher o tipo de dados que será lido,
+              //no caso, estamos lendo JSON.
+              dataType: 'json',
+              //SUCESS é referente a função que será executada caso
+              //ele consiga ler a fonte de dados com sucesso.
+              //O parâmetro dentro da função se refere ao nome da variável
+              //que você vai dar para ler esse objeto.
+              success: function(resposta){
+                //Agora basta definir os valores que você deseja preencher
+                //automaticamente nos campos acima.
+                $("#endereco").val(resposta.logradouro);
+                $("#complemento").val(resposta.complemento);
+                $("#lbairro").val(resposta.bairro);
+                $("#cidade").val(resposta.localidade);
+                $("#uf").val(resposta.uf);
+                //Vamos incluir para que o Número seja focado automaticamente
+                //melhorando a experiência do usuário
+                $("#numero").focus();
+              }
+            });
+          });
+        </script>
+      </body>
+    </html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+  .Login {
+    position: absolute;
+    background: white;
+    width: 300px;
+    text-align: center;
+    left: 500px;
+    top: 150px;
+    height: 300px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid black ;
+  }
+
+  .Login > div >img {
+    position: absolute;
+    top: -50px;
+    left: 101px;
+  }
+
+.container {
+  top: 30px;
+  position: relative;
+}
+
+.container > div > span {
+  top: 300px;
+  position: relative;
+}
+
+.nome_login {
+  display: block;
+  width: 300px;
+}
+
+.button {
+    background-color: black;
+    font-size: 30px;
+}

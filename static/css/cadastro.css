@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.img-logo > a > img {
+    left: 620px;
+}
+
+.opcoes {
+    top: 200px;
+    font-size: 1.3em;
+    position: relative;
+    text-decoration: none;
+}
+
+div {
+    position: relative;
+    vertical-align: center;
+}
+
+.opcoes > ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+.opcoes > ul > li {
+    background-color: white;    
+    display: inline;
+    padding: 20px 100px 20px 100px;
+    position: relative; 
+    text-align: center;
+    border: 1px outset black;
+    border-radius: 8px;
+}
+.opcoes > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.opcoes > ul > li::before {
+    text-decoration: underline blue;
+}
+
+.opcoes > ul > li::after {
+    text-decoration: underline red;
+    cursor: pointer;
+    transition: all 250ms ease 0s;
+    transform: scale(0)
+}
+
+form {
+    width: 1050px;
+    top: 230px;
+    position: relative;
+    left: 150px;
+    
+}
+
+form > div {
+    box-shadow: 15px 15px 20px black;
+    border-radius: 8px;
+}
+
+
+form h1 {
+    font-size: 15px;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+form span, input, select{
+    margin: 0px 10px 20px 20px;
+    border-bottom: 2px black;
+    
+    
+}
+
+.input_text {
+    border: none;
+    border-bottom: 1px solid blue;
+    width: 1000px;
+    height: 30px;
+}
+.input_text:hover {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 black;
+    transition: all 450ms ease;
+}
+
+.submit {
+    padding: 20px 30px 20px 30px;
+    margin:20px;
+    text-transform: uppercase;
+    position: relative;
+    left: 415px;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: orange;
+}
+
+.buscar {
+    margin-left: 20px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 65,86);
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.buscar-efeito {
+ background: rgba(0, 0, 0, 1);
+ color: #ffffff;
+ box-shadow: 0 5px 0 rgb(0, 43, 58);
+}
+
+.buscar-efeito:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-shadow: 0 5px 0 rgb(0, 43, 58);
+}
+
+.buscar-efeito:active {
+    position: relative;
+    bottom: 25px;
+    box-shadow: none;
+}
+
+select {
+    width: 300px;
+    height: 25px;
+}
